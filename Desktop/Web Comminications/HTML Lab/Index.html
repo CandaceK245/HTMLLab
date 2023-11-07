@@ -1,50 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+    <script>
+        var countDownDate = new Date("Dec 25, 2023 00:00:00").getTime();
+
+        var x = setInterval(function(){
+            var now = new Date().getTime();
+
+            var distance = countDownDate - now;
+
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("myPopup").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s";
+
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("myPopup").innerHTML = "EXPIRED";
+            }
+        }, 1000);
+
+        function myFunction() {
+            var popup = document.getElementById("myPopup");
+            popup.classList.toggle("show");
+        }
+    </script>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About me: Candace K.</title>
-    <style>
-        .logo { 
-            background: left / cover url('./IMG_9678.JPG');
-            display: flex;
-            height: 400px;
-            align-items: end;
-            justify-content: center;
-            font:
-                bold 100px 'Georgia';
-            color: #f8f5f7;
-        }
-        .logo2 {
-           background: left/ cover url(./IMG_9678.JPG);
-           display: flex;
-           height: 200px;
-           align-items: end;
-           justify-content: center;
-        }
-        .fit-picture {
-            width:400px;
-            height:550px;
-        }
-        table {
-            font-family:Georgia;
-            border-collapse: collapse;
-            width: 100%
-        }
-        td, th{
-            border: 1px solid #050505dd;
-            text-align: left;
-            padding: 8px;
-        }
-        tr:nth-child(even){
-            background-color: #82BDA6;
-        }
-    </style>
+<link rel="stylesheet" href="website styling.css" >
 </head>
 <header> 
     <div class="logo"> Candace K. </div>
 </header>
-<h1> About Me: </h1>
+<h1 class="headings1"> About Me: </h1>
 <body>
 <p>
     I am a 32-year-old mama to a 2 year old little girl Ellie (we named her after a character from a video game :)) </br>
@@ -55,11 +46,11 @@
     We unfortunately lost our 13 year old German-Shepherd Lab Juliet this September.<br/>
 <img class="fit-picture" src="./Juliet on couch.jpeg" alt="photo of dog Juliet" /> <br/>
 </p>
-<h1>Likes and Hobbies</h1>
+<h1 class="headings1" > Likes and Hobbies</h1>
 <p>
     I like to watch Movies (majority of them are Horror) and some TV shows; <br/>
-    <h3>Movies</h3>
-    <ol>
+    <h2 class="headings2"> Movies </h2>
+    <ol class="lists" >
         <li><a href="https://www.imdb.com/title/tt1179904/?ref_=fn_al_tt_1" target="_blank">Paranormal Activity 1-4,6 (2007)</a></li>
         <li><a href="https://www.imdb.com/title/tt4267026/?ref_=nv_sr_srsg_0_tt_8_nm_0_q_hell%2520house" target="_blank">Hell House LLC 1-3 (2015)</a></li>
         <li><a href="https://www.imdb.com/title/tt0107688/?ref_=fn_al_tt_1" target="_blank">Nightmare Before Christmas(1993)</a></li>
@@ -71,16 +62,16 @@
         <li><a href="https://www.imdb.com/title/tt0147800/?ref_=nv_sr_srsg_0_tt_8_nm_0_q_10%2520things%2520I%2520hat" target="_blank">10 Things I Hate About You (1999)</a></li>
         <li><a href="https://www.imdb.com/title/tt2309260/?ref_=nv_sr_srsg_0_tt_8_nm_0_q_the%2520gallows" target="_blank">The Gallows (2015) </a></li>
     </ol>
-    <h3>TV Shows</h3>
-    <ol>
+    <h2 class="headings2"> TV Shows</h2>
+    <ol class="lists">
         <li><a href="https://www.imdb.com/title/tt0460627/?ref_=fn_al_tt_1" target="_blank">Bones (2005-2017)</a></li>
         <li><a href="https://www.imdb.com/title/tt0238784/?ref_=nv_sr_srsg_0_tt_3_nm_5_q_gilmore" target="_blank">Gilmore Girls(2000-2007/2016)</a></li>
         <li><a href="https://www.imdb.com/title/tt1094229/?ref_=fn_al_tt_1" target="_blank">Heartland (2007-Current)</a></li>
         <li><a href="https://www.imdb.com/title/tt0285335/?ref_=nv_sr_srsg_0_tt_8_nm_0_q_the%2520amazing%2520race" target="_blank">The Amazing Race (2001-Current) </a></li>
         <li><a href="https://www.imdb.com/title/tt2342499/?ref_=nv_sr_srsg_0_tt_8_nm_0_q_below%2520deck" target="_blank">Below Deck (2013-Current) </a></li>
     </ol>
-    <h3>Hobbies</h3>
-    <ul>
+    <h2 class="headings2"> Hobbies</h2>
+    <ul class="lists">
         <li>Cross-Stitch</li>
         <li>Photography</li>
         <li>Reading</li>
@@ -109,16 +100,22 @@
         </tr>
      </table>
 </p>
-<h1>My Goals</h1>
+<h1 class="headings1"> My Goals</h1>
 <p>
-    My Goal with finishing my degree in Graphic Design is to be able to help local small businesses <br/>
-    set up/maintain their websites (so they dont have to rely on ETSY) and their social media platforms <br/>
-    so that they can focus on the heart of their business and not have to worry about marketing <br/>
+    My Goal with finishing my degree in Graphic Design is to become a social media manage so I can be able to help local small businesses <br/>
+    set up/maintain their websites (so they dont have to rely on ETSY) and their social media platforms, <br/>
+    so that they can focus on the heart of their business and not have to worry about maintaining their content. <br/>
     I would like to do this as a part time consultant so that I can still focus on my family and be there <br/>
     for my daughter when she needs me.
 </p>
+<div class="popup" onclick="myFunction()"><img class="easteregg" src= "christmas ornament.jpg">
+    <span class="popuptext" id="myPopup">Time to Christmas</span>
+</div>
 </body>
 <footer>
-    <div class="logo2" </div>
+    <div class="logo2" > <p> &copy;Candace K. <br/>
+                        403-589-5305 <br/> </p>
+    <p><a href='mai&#108;to&#58;&#99;&#97;n&#100;&#97;c&#101;%&#54;B2&#52;%35&#64;&#103;&#109;ail%2Ec&#111;m'>&#99;a&#110;dace&#107;24&#53;&#64;gma&#105;l&#46;co&#109;</a><br/>
+    </p></div>
 </footer>
 </html>
