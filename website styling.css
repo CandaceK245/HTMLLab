@@ -1,0 +1,115 @@
+.logo { 
+    background: left / cover url('./IMG_9678.JPG');
+    display: flex;
+    height: 400px;
+    align-items: end;
+    justify-content: center;
+    font:
+        bold 100px 'Georgia';
+    color: #f8f5f7;
+}
+.logo2 {
+    background: left / cover url(./mountains\ footer.JPG);
+    display: flex;
+    height: 300px;
+    align-items: left;
+    justify-content: left;
+    font: 
+        Bold 20px 'Georgia';
+        color: #050505
+}
+.fit-picture {
+    width:400px;
+    height:550px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+table {
+    font-family:Georgia;
+    border-collapse: collapse;
+    width: 100%
+}
+td, th{
+    border: 1px solid #050505dd;
+    text-align: left;
+    padding: 8px;
+}
+tr:nth-child(even){
+    background-color: #82BDA6;
+}
+.headings1 {
+    color:#A506FA;
+    font-size: 50px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+.headings2 {
+    color: #5B028A; 
+    font-size: 25px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+    text-align: center;
+    line-height: 1.8;
+}
+.lists{
+    list-style-position: inside;
+    text-align: left;
+    display:inline-block;
+}
+.easteregg{
+    height: 100px;
+    width: 150px;
+}
+
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+}
+
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+@-webkit-keyframes fadeIn {
+    from {opacity:  0;}
+    to{opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity:  0;}
+    to{opacity: 1;}
+}
