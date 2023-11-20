@@ -33,8 +33,8 @@ body {
         color: #050505
 }
 .fit-picture {
-    width: 225px;
-    height:300px;
+    width: 180px;
+    height:230px;
     float: right;
     border-radius: 8px;
 }
@@ -100,7 +100,6 @@ section {
     border: 2px solid #400261;
     border-radius: 12px;
     padding: 5px;
-    min-width: 300px;
 }
 /* code used for Movies and TV Section */
 .movies,.tv {
