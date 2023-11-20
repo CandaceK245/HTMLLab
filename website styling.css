@@ -19,10 +19,10 @@
         color: #050505
 }
 .fit-picture {
-    width:400px;
-    height:550px;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    width: 225px;
+    height:300px;
+    float: right;
+    border-radius: 8px;
 }
 table {
     font-family:Georgia;
@@ -35,16 +35,17 @@ td, th{
     padding: 8px;
 }
 tr:nth-child(even){
-    background-color: #82BDA6;
+    background-color: #EAC5FD;
 }
 .headings1 {
-    color:#A506FA;
+    background-color: #EAC5FD;
+    color:#ac22f7;
     font-size: 50px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .headings2 {
     color: #5B028A; 
-    font-size: 25px;
+    font-size: 30px;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 body{
@@ -58,11 +59,58 @@ body{
     text-align: left;
     display:inline-block;
 }
+/* Added missed Navigation bar*/
+body Nav ul li a{
+    color: #fff;
+    border:#050505;
+    padding: 10px;
+    display: inline-flex;
+    list-style-type: none;
+}
+body Nav ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+}
+body Nav {
+    background-color: #5B028A;
+}
 .easteregg{
     height: 100px;
     width: 150px;
 }
-
+section {
+    display: block;
+}
+.aboutme {
+    border: 2px solid #400261;
+    border-radius: 12px;
+    padding: 5px;
+}
+/* code used for Movies and TV Section */
+.movies,.tv {
+    border: 2px solid #400261;
+    border-radius: 12px;
+    padding: 5px;
+    min-width: 500px;
+}
+.movies a, .tv a{
+    color: #02C1AD;
+}
+.hobbies {
+    border: 2px solid #400261;
+    border-radius: 12px;
+    padding: 5px;
+}
+.column {
+    flex: 50%;
+    padding: 5px;
+    padding-bottom: 200px;
+    height: 300px; 
+  }
+.row {
+    display:flex;
+  }
 .popup {
     position: relative;
     display: inline-block;
@@ -86,7 +134,6 @@ body{
     left: 50%;
     margin-left: -80px;
 }
-
 .popup .popuptext::after {
     content: "";
     position: absolute;
