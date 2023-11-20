@@ -4,12 +4,12 @@
 }
 @media only screen and (min-width: 768px){
     body {
-        background-color: #dbd9d9;
+        background-color: white;
     }  
 }
 @media only screen and (max-width:768px){
 body {
-    background-color: #ffffff;
+    background-color: #dbd9d9
 }
 }
 .logo { 
