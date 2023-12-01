@@ -54,9 +54,11 @@ for (let i = 0; i++ < 100;) {
     var listitem = document.createElement("li");
     if (i % 2 == 0){
         listitem.innerHTML="even";
+        listitem.classList.add("even")
     }
     else {
         listitem.innerHTML="odd";
+        listitem.classList.add("odd");
     }
     
     list.append(listitem);
