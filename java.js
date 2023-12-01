@@ -22,3 +22,42 @@ function myFunction() {
     var popup = document.getElementById("myPopup");
     popup.classList.toggle("show");
 }
+console.log("Hello World");
+
+var now = new Date().getFullYear();
+document.getElementById("footerInfo").innerHTML= "&copy; " + now.toString() + " Candace K."
+function myalert(){
+    alert("Happy Holidays!");
+}
+document.getElementById("surpriselink").onmouseover = () => {
+        document.getElementById("surpriselink").innerText = 'Surprise!';
+};
+document.getElementById("surpriselink").onmouseleave = () => {
+    document.getElementById("surpriselink").innerText = 'Something Fun!';
+};
+
+let count = 1;
+document.getElementById("btn-counter").onclick = () => {
+        count = count + 1;
+        document.getElementById('txt-counter').innerHTML = "Number:"+count;
+        if (count % 2 == 0){
+            document.getElementById("txt-counter").classList.remove('odd');
+            document.getElementById("txt-counter").classList.add('even');
+        }
+        else {
+            document.getElementById("txt-counter").classList.remove('even');
+            document.getElementById("txt-counter").classList.add('odd');
+        }
+}
+for (let i = 0; i++ < 100;) {
+    var list = document.getElementById("numbers");
+    var listitem = document.createElement("li");
+    if (i % 2 == 0){
+        listitem.innerHTML="even";
+    }
+    else {
+        listitem.innerHTML="odd";
+    }
+    
+    list.append(listitem);
+}
