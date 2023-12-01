@@ -174,3 +174,9 @@ section {
     from {opacity:  0;}
     to{opacity: 1;}
 }
+.odd{
+    background-color:#02C1AD
+}
+.even{
+    background-color: #ac22f7
+}
