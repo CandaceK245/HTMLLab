@@ -17,7 +17,7 @@
     align-items: end;
     justify-content: center;
     font:
-        bold 100px 'Salsa','Georgia';
+        Bold 100px 'Salsa','Georgia';
     color: #f8f5f7;
 }
 .logo2 {
@@ -45,7 +45,7 @@ h1 {
     background-color: #EAC5FD;
     color:#ac22f7;
     font-size: 50px;
-    font-family: Salsa, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-family: 'Salsa', 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
 }
 h2 {
     color: #5B028A; 
