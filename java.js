@@ -1,3 +1,4 @@
+/* Easter egg function */
 var countDownDate = new Date("Dec 25, 2023 00:00:00").getTime();
 
 var x = setInterval(function(){
@@ -22,13 +23,16 @@ function myFunction() {
     var popup = document.getElementById("myPopup");
     popup.classList.toggle("show");
 }
-console.log("Hello World");
 
+/* Footer Date */
 var now = new Date().getFullYear();
-document.getElementById("footerInfo").innerHTML= "&copy; " + now.toString() + " Candace K."
+document.getElementById("footerInfo").innerHTML= "&copy; " + now.toString() + " Candace K.";
+
 function myalert(){
     alert("Happy Holidays!");
 }
+
+/* mouse over */
 document.getElementById("surpriselink").onmouseover = () => {
         document.getElementById("surpriselink").innerText = 'Surprise!';
 };
@@ -36,10 +40,11 @@ document.getElementById("surpriselink").onmouseleave = () => {
     document.getElementById("surpriselink").innerText = 'Something Fun!';
 };
 
+/* Counting */
 let count = 1;
 document.getElementById("btn-counter").onclick = () => {
-        count = count + 1;
-        document.getElementById('txt-counter').innerHTML = "Number:"+count;
+        count++;
+        document.getElementById('txt-counter').innerHTML = "Number: " + count;
         if (count % 2 == 0){
             document.getElementById("txt-counter").classList.remove('odd');
             document.getElementById("txt-counter").classList.add('even');
@@ -49,6 +54,8 @@ document.getElementById("btn-counter").onclick = () => {
             document.getElementById("txt-counter").classList.add('odd');
         }
 }
+
+/* Loop Element */
 for (let i = 0; i++ < 100;) {
     var list = document.getElementById("numbers");
     var listitem = document.createElement("li");
@@ -63,3 +70,4 @@ for (let i = 0; i++ < 100;) {
     
     list.append(listitem);
 }
+console.log("Java Loaded");

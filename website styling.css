@@ -1,29 +1,27 @@
-@font-face {
-    font-family: Salsa;
-    src: url(Salsa-Regular.ttf);
-}
+/*Media Sizing*/
 @media only screen and (min-width: 768px){
     body {
         background-color: white;
     }  
 }
 @media only screen and (max-width:768px){
-body {
-    background-color: #dbd9d9
+    body {
+        background-color: #dbd9d9
+    }
 }
-}
+/*Images styling*/
 .logo { 
-    background: left / cover url('./IMG_9678.JPG');
+    background: left / cover url('./IMG/IMG_9678.JPG');
     display: flex;
     height: 400px;
     align-items: end;
     justify-content: center;
     font:
-        bold 100px 'Georgia';
+        bold 100px 'Salsa','Georgia';
     color: #f8f5f7;
 }
 .logo2 {
-    background: left / cover url(./mountains\ footer.JPG);
+    background: left / cover url(./IMG/mountains\ footer.JPG);
     display: flex;
     height: 300px;
     align-items: left;
@@ -38,29 +36,21 @@ body {
     float: right;
     border-radius: 8px;
 }
-table {
-    font-family:Georgia;
-    border-collapse: collapse;
-    width: 100%
+/*Font Family/boarders for body of page */
+@font-face {
+    font-family: Salsa;
+    src: url(Fonts/Salsa-Regular.ttf)
 }
-td, th{
-    border: 1px solid #050505dd;
-    text-align: left;
-    padding: 8px;
-}
-tr:nth-child(even){
-    background-color: #EAC5FD;
-}
-.headings1 {
+h1 {
     background-color: #EAC5FD;
     color:#ac22f7;
     font-size: 50px;
-    font-family: Salsa;
+    font-family: Salsa, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
 }
-.headings2 {
+h2 {
     color: #5B028A; 
     font-size: 30px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif
 }
 body{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -73,35 +63,11 @@ body{
     text-align: left;
     display:inline-block;
 }
-/* Added missed Navigation bar*/
-body Nav ul li a{
-    color: #fff;
-    border:#050505;
-    padding: 10px;
-    display: inline-flex;
-    list-style-type: none;
-}
-body Nav ul {
-    display: flex;
-    list-style-type: none;
-    justify-content: center;
-}
-body Nav {
-    background-color: #5B028A;
-}
-.easteregg{
-    height: 100px;
-    width: 150px;
-}
-section {
-    display: block;
-}
 .aboutme {
     border: 2px solid #400261;
     border-radius: 12px;
     padding: 5px;
 }
-/* code used for Movies and TV Section */
 .movies,.tv {
     border: 2px solid #400261;
     border-radius: 12px;
@@ -123,8 +89,46 @@ section {
     height: 300px; 
   }
 .row {
-    display:flex;
+    display: flex;
   }
+  /* Video Game Table styling */
+table {
+    font-family: Georgia, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-collapse: collapse;
+    width: 100%
+}
+td, th{
+    border: 1px solid #050505dd;
+    text-align: left;
+    padding: 8px;
+}
+tr:nth-child(even){
+    background-color: #EAC5FD;
+}
+/* Added missed Navigation bar*/
+body Nav ul li a{
+    color: #fff;
+    border:#050505;
+    padding: 10px;
+    display: inline-flex;
+    list-style-type: none;
+}
+body Nav ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+}
+body Nav {
+    background-color: #5B028A;
+}
+/*Count down to Christmas Easter Egg styling*/
+.easteregg{
+    height: 100px;
+    width: 150px;
+}
+section {
+    display: block;
+}
 .popup {
     position: relative;
     display: inline-block;
@@ -158,22 +162,20 @@ section {
     border-style: solid;
     border-color: #555 transparent transparent transparent;
 }
-
 .popup .show {
     visibility: visible;
     -webkit-animation: fadeIn 1s;
     animation: fadeIn 1s;
 }
-
 @-webkit-keyframes fadeIn {
     from {opacity:  0;}
     to{opacity: 1;}
 }
-
 @keyframes fadeIn {
     from {opacity:  0;}
     to{opacity: 1;}
 }
+/*Java additional loop styling*/
 .odd{
     background-color:#02C1AD
 }
